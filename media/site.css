@@ -1,0 +1,35 @@
+* {
+    font-family: serif-serif, arial, helvetica;
+    color: white;
+}
+
+.corpo {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #282f36;
+    padding: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+    -webkit-box-shadow: 1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black; 
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #FFFFFF;
+    filter: dropshadow(color=#FFFFFF, offx=1, offy=1);
+}
+
+h1, h2, h3, h4, h5 {
+    color: #BDa21D;
+}
+
+a {
+    color: #d2e098;
+}
+
+a:hover {
+    color: white;
+}
+

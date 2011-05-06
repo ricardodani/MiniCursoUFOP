@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %} - {{ enquete }}{% endblock %}
+
+{% block conteudo %}
+<h2>{{ enquete }}</h2>
+<h3>{{ enquete.pergunta }}</h3>
+<ul>
+{% for opcao in enquete.opcao_set.all %}
+<li>{{ opcao.total_votos }} | {{ opcao }}</li>
+{% endfor %}
+</ul>
+<a href="/enquetes/">Voltar</a>
+{% endblock %}
+

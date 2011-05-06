@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %} - {{ enquete }}{% endblock %}
+
+{% block conteudo %}
+<h2>{{ enquete }}</h2>
+<h3>{{ enquete.pergunta }}</h3>
+<form method="post" action"/enquetes/{{ enquete.id }}/votar/">
+{% csrf_token %}
+<ul>
+{% for opcao in enquete.opcao_set.all %}
+<li><input type="radio" name="opcao" value="{{ opcao.id }}" />{{ opcao }}</li>
+{% endfor %}
+</ul>
+<input type="submit" value="Enviar" />
+</form>
+<a href="/enquetes/">Voltar</a>
+{% endblock %}

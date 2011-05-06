@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}Lista de enquetes{% endblock %}
+
+{% block conteudo %}
+{% if enquetes %}
+    <ul>
+    {% for enquete in enquetes %}
+    <li><a href="/enquetes/{{ enquete.id }}/">{{ enquete }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    Não existem enquetes cadastradas.
+{% endif %}
+{% endblock %}
