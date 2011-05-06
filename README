@@ -1,0 +1,9 @@
+Autor: Ricardo Dani
+E-mail: ricardodani@gmail.com
+
+Requerimentos
+
+Django 1.2
+
+(Não testei em outras versões, mas deve funcionar em versões > 1.0
+visto que é um projeto bem básico)
